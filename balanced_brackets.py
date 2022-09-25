@@ -1,4 +1,4 @@
- 
+#function to check if the brackets are balanced 
 def balbrack(expr):
     stack = []
  
@@ -19,17 +19,16 @@ def balbrack(expr):
                 if char != "]":
                     return False
  
-    
+    # check if the stack is empty
     if stack:
         return False
     return True
  
- 
+# main program
 if __name__ == "__main__":
     expr = input()
- 
     
-    if balbrack(expr):
+   if balbrack(expr):
         print("Balanced")
     else:
         print("Not Balanced")
